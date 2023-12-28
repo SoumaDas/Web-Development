@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Element With Class Selectros</title>
+	<style>
+		.highlight {
+			background-color: green;
+		}
+		p.highlight {
+			font-style: italic;
+		}
+		.highlight.mainpoint {
+			color: red;
+			background-color: black;
+		}
+		/*Child Selectors*/
+		section > article {
+			color: green;
+			font-size: 20px;
+		}
+		section > h2 {
+			color: green;
+		}
+		/* Decendent Selectro*/
+		section li {
+			color: lightgreen;
+		}
+
+	</style>
+</head>
+<body>
+	<h1 class="highlight">Elements with Class Selectors</h1>
+	<p>Lorem ipsum dolor sit amet, consectur adipising elit.
+		possiums amet alias est? Nobis cum quasi at soluta oidit, maiors quaret dolors
+		expendita ex nemo ea repellendus dolorem sed maxime quos?</p>
+	<p class="highlight"> This is P with CLASS = "highlight"</p>
+	<div class="mainpoint highlight"> This is the main point of the entire article</div>
+	<h1>Child Selectoer</h1>
+	<section>
+		<h2>SubHeading 1</h2>
+		<div>
+			<article>Article which inside DIV,
+			which is inside a section</article>
+		</div>
+	</section>
+	<section>
+		<article>Article as a direct child of the section element</article>
+	</section>
+	<h2>SubHeading 2</h2>
+	<h1>Decendant Selector</h1>
+	<section>
+		Table of contents:
+		<ul>
+			<li>Article 1</li>
+			<li>Article 2</li>
+			<li>Article 3</li>
+		</ul>
+	</section>
+	<article>
+		Shopping List:
+		<ul>
+			<li>Cookies</li>
+			<li>Cake</li>
+			<li>Pie</li>
+		</ul>
+	</article>
+</body>
+</html>
